@@ -1,24 +1,3 @@
-# vue-task-project
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vue ts 示例小项目，
+用来 **Vue** 与 **Angular** 技术评析
+2020-06-02

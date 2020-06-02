@@ -1,32 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <back-forword-btn-group class="back-forword-btn-group" />
     <router-view/>
+    <page-footer />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator'
+import backForwordBtnGroup from './components/forword-back-btn.vue'
+import footer from './components/footer.vue'
+@Component({
+  components: {
+    "back-forword-btn-group": backForwordBtnGroup,
+    "page-footer": footer,
+  }
+})
+export default class TaskItem extends Vue {}
 
-#nav {
-  padding: 30px;
-}
+</script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+<style scoped>
+.back-forword-btn-group {
+  position: fixed;
+  top: 10%;
+  left: 20%;
 }
 </style>
+

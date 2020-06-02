@@ -7,6 +7,25 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Constantia, 华文中宋, 宋体, serif !important;
+    }
+    html, body {
+      background-color: #E4EBF5;
+    }
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    button {
+      outline: 0;
+    }
+  </style>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
